@@ -1,0 +1,535 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		07C335411DAC8E19003338DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C335401DAC8E19003338DD /* AppDelegate.swift */; };
+		07C335431DAC8E19003338DD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C335421DAC8E19003338DD /* ViewController.swift */; };
+		07C335461DAC8E19003338DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07C335441DAC8E19003338DD /* Main.storyboard */; };
+		07C335481DAC8E19003338DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07C335471DAC8E19003338DD /* Assets.xcassets */; };
+		07C3354B1DAC8E19003338DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07C335491DAC8E19003338DD /* LaunchScreen.storyboard */; };
+		07C335561DAC8E19003338DD /* DaanaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C335551DAC8E19003338DD /* DaanaTests.swift */; };
+		07C335611DAC8E19003338DD /* DaanaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C335601DAC8E19003338DD /* DaanaUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		07C335521DAC8E19003338DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 07C335351DAC8E17003338DD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 07C3353C1DAC8E17003338DD;
+			remoteInfo = Daana;
+		};
+		07C3355D1DAC8E19003338DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 07C335351DAC8E17003338DD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 07C3353C1DAC8E17003338DD;
+			remoteInfo = Daana;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		07C3353D1DAC8E18003338DD /* Daana.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Daana.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		07C335401DAC8E19003338DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		07C335421DAC8E19003338DD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		07C335451DAC8E19003338DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		07C335471DAC8E19003338DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		07C3354A1DAC8E19003338DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		07C3354C1DAC8E19003338DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07C335511DAC8E19003338DD /* DaanaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DaanaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		07C335551DAC8E19003338DD /* DaanaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaanaTests.swift; sourceTree = "<group>"; };
+		07C335571DAC8E19003338DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07C3355C1DAC8E19003338DD /* DaanaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DaanaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		07C335601DAC8E19003338DD /* DaanaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaanaUITests.swift; sourceTree = "<group>"; };
+		07C335621DAC8E19003338DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		07C3353A1DAC8E17003338DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07C3354E1DAC8E19003338DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07C335591DAC8E19003338DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		07C335341DAC8E17003338DD = {
+			isa = PBXGroup;
+			children = (
+				07C3353F1DAC8E18003338DD /* Daana */,
+				07C335541DAC8E19003338DD /* DaanaTests */,
+				07C3355F1DAC8E19003338DD /* DaanaUITests */,
+				07C3353E1DAC8E18003338DD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		07C3353E1DAC8E18003338DD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				07C3353D1DAC8E18003338DD /* Daana.app */,
+				07C335511DAC8E19003338DD /* DaanaTests.xctest */,
+				07C3355C1DAC8E19003338DD /* DaanaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		07C3353F1DAC8E18003338DD /* Daana */ = {
+			isa = PBXGroup;
+			children = (
+				07C335401DAC8E19003338DD /* AppDelegate.swift */,
+				07C335421DAC8E19003338DD /* ViewController.swift */,
+				07C335441DAC8E19003338DD /* Main.storyboard */,
+				07C335471DAC8E19003338DD /* Assets.xcassets */,
+				07C335491DAC8E19003338DD /* LaunchScreen.storyboard */,
+				07C3354C1DAC8E19003338DD /* Info.plist */,
+			);
+			path = Daana;
+			sourceTree = "<group>";
+		};
+		07C335541DAC8E19003338DD /* DaanaTests */ = {
+			isa = PBXGroup;
+			children = (
+				07C335551DAC8E19003338DD /* DaanaTests.swift */,
+				07C335571DAC8E19003338DD /* Info.plist */,
+			);
+			path = DaanaTests;
+			sourceTree = "<group>";
+		};
+		07C3355F1DAC8E19003338DD /* DaanaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				07C335601DAC8E19003338DD /* DaanaUITests.swift */,
+				07C335621DAC8E19003338DD /* Info.plist */,
+			);
+			path = DaanaUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		07C3353C1DAC8E17003338DD /* Daana */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07C335651DAC8E19003338DD /* Build configuration list for PBXNativeTarget "Daana" */;
+			buildPhases = (
+				07C335391DAC8E17003338DD /* Sources */,
+				07C3353A1DAC8E17003338DD /* Frameworks */,
+				07C3353B1DAC8E17003338DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Daana;
+			productName = Daana;
+			productReference = 07C3353D1DAC8E18003338DD /* Daana.app */;
+			productType = "com.apple.product-type.application";
+		};
+		07C335501DAC8E19003338DD /* DaanaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07C335681DAC8E19003338DD /* Build configuration list for PBXNativeTarget "DaanaTests" */;
+			buildPhases = (
+				07C3354D1DAC8E19003338DD /* Sources */,
+				07C3354E1DAC8E19003338DD /* Frameworks */,
+				07C3354F1DAC8E19003338DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				07C335531DAC8E19003338DD /* PBXTargetDependency */,
+			);
+			name = DaanaTests;
+			productName = DaanaTests;
+			productReference = 07C335511DAC8E19003338DD /* DaanaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		07C3355B1DAC8E19003338DD /* DaanaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07C3356B1DAC8E19003338DD /* Build configuration list for PBXNativeTarget "DaanaUITests" */;
+			buildPhases = (
+				07C335581DAC8E19003338DD /* Sources */,
+				07C335591DAC8E19003338DD /* Frameworks */,
+				07C3355A1DAC8E19003338DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				07C3355E1DAC8E19003338DD /* PBXTargetDependency */,
+			);
+			name = DaanaUITests;
+			productName = DaanaUITests;
+			productReference = 07C3355C1DAC8E19003338DD /* DaanaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		07C335351DAC8E17003338DD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Eric Elmoznino";
+				TargetAttributes = {
+					07C3353C1DAC8E17003338DD = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = GEECX5EAT6;
+						ProvisioningStyle = Automatic;
+					};
+					07C335501DAC8E19003338DD = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = GEECX5EAT6;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 07C3353C1DAC8E17003338DD;
+					};
+					07C3355B1DAC8E19003338DD = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = GEECX5EAT6;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 07C3353C1DAC8E17003338DD;
+					};
+				};
+			};
+			buildConfigurationList = 07C335381DAC8E17003338DD /* Build configuration list for PBXProject "Daana" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 07C335341DAC8E17003338DD;
+			productRefGroup = 07C3353E1DAC8E18003338DD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				07C3353C1DAC8E17003338DD /* Daana */,
+				07C335501DAC8E19003338DD /* DaanaTests */,
+				07C3355B1DAC8E19003338DD /* DaanaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		07C3353B1DAC8E17003338DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07C3354B1DAC8E19003338DD /* LaunchScreen.storyboard in Resources */,
+				07C335481DAC8E19003338DD /* Assets.xcassets in Resources */,
+				07C335461DAC8E19003338DD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07C3354F1DAC8E19003338DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07C3355A1DAC8E19003338DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		07C335391DAC8E17003338DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07C335431DAC8E19003338DD /* ViewController.swift in Sources */,
+				07C335411DAC8E19003338DD /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07C3354D1DAC8E19003338DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07C335561DAC8E19003338DD /* DaanaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07C335581DAC8E19003338DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07C335611DAC8E19003338DD /* DaanaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		07C335531DAC8E19003338DD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 07C3353C1DAC8E17003338DD /* Daana */;
+			targetProxy = 07C335521DAC8E19003338DD /* PBXContainerItemProxy */;
+		};
+		07C3355E1DAC8E19003338DD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 07C3353C1DAC8E17003338DD /* Daana */;
+			targetProxy = 07C3355D1DAC8E19003338DD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		07C335441DAC8E19003338DD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				07C335451DAC8E19003338DD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		07C335491DAC8E19003338DD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				07C3354A1DAC8E19003338DD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		07C335631DAC8E19003338DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		07C335641DAC8E19003338DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		07C335661DAC8E19003338DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = GEECX5EAT6;
+				INFOPLIST_FILE = Daana/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ericelmoznino.Daana;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		07C335671DAC8E19003338DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = GEECX5EAT6;
+				INFOPLIST_FILE = Daana/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ericelmoznino.Daana;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		07C335691DAC8E19003338DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = GEECX5EAT6;
+				INFOPLIST_FILE = DaanaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ericelmoznino.DaanaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Daana.app/Daana";
+			};
+			name = Debug;
+		};
+		07C3356A1DAC8E19003338DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = GEECX5EAT6;
+				INFOPLIST_FILE = DaanaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ericelmoznino.DaanaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Daana.app/Daana";
+			};
+			name = Release;
+		};
+		07C3356C1DAC8E19003338DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = GEECX5EAT6;
+				INFOPLIST_FILE = DaanaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ericelmoznino.DaanaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Daana;
+			};
+			name = Debug;
+		};
+		07C3356D1DAC8E19003338DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = GEECX5EAT6;
+				INFOPLIST_FILE = DaanaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ericelmoznino.DaanaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Daana;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		07C335381DAC8E17003338DD /* Build configuration list for PBXProject "Daana" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07C335631DAC8E19003338DD /* Debug */,
+				07C335641DAC8E19003338DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		07C335651DAC8E19003338DD /* Build configuration list for PBXNativeTarget "Daana" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07C335661DAC8E19003338DD /* Debug */,
+				07C335671DAC8E19003338DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		07C335681DAC8E19003338DD /* Build configuration list for PBXNativeTarget "DaanaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07C335691DAC8E19003338DD /* Debug */,
+				07C3356A1DAC8E19003338DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		07C3356B1DAC8E19003338DD /* Build configuration list for PBXNativeTarget "DaanaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07C3356C1DAC8E19003338DD /* Debug */,
+				07C3356D1DAC8E19003338DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 07C335351DAC8E17003338DD /* Project object */;
+}
