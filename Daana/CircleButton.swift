@@ -9,13 +9,12 @@
 import UIKit
 
 @IBDesignable
-class CircleView: UIView {
+class CircleButton: UIButton {
     
     override func layoutSubviews() {
-        layer.cornerRadius = bounds.width/2
+        super.layoutSubviews()
         
-        let icon = viewWithTag(2) as? UIImageView
-        icon?.image = icon?.image?.withRenderingMode(UIImageRenderingMode.alwaysTemplate)
+        layer.cornerRadius = bounds.width/2
     }
 
 }

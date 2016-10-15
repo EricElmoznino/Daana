@@ -16,8 +16,10 @@ class MainPageViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-    
 
+    @IBAction func didTapDonateButton(_ sender: AnyObject) {
+        print("test")
+    }
     /*
     // MARK: - Navigation
 

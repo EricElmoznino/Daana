@@ -7,11 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		070107191DB290F100A0A6BF /* DonateButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070107181DB290F100A0A6BF /* DonateButton.swift */; };
+		0701071B1DB2938800A0A6BF /* MenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0701071A1DB2938800A0A6BF /* MenuButton.swift */; };
 		074366881DAF0ECF007526D5 /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074366871DAF0ECF007526D5 /* MainPageViewController.swift */; };
 		0743668A1DAF1273007526D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 074366891DAF1273007526D5 /* Main.storyboard */; };
 		0743668C1DAF134F007526D5 /* FooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0743668B1DAF134F007526D5 /* FooterView.swift */; };
 		0743668E1DAF22D4007526D5 /* SliderSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0743668D1DAF22D4007526D5 /* SliderSymbol.swift */; };
-		074366901DAF26F1007526D5 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0743668F1DAF26F1007526D5 /* CircleView.swift */; };
+		074366901DAF26F1007526D5 /* CircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0743668F1DAF26F1007526D5 /* CircleButton.swift */; };
 		07C335411DAC8E19003338DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C335401DAC8E19003338DD /* AppDelegate.swift */; };
 		07C335431DAC8E19003338DD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07C335421DAC8E19003338DD /* ViewController.swift */; };
 		07C335481DAC8E19003338DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07C335471DAC8E19003338DD /* Assets.xcassets */; };
@@ -38,11 +40,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		070107181DB290F100A0A6BF /* DonateButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DonateButton.swift; sourceTree = "<group>"; };
+		0701071A1DB2938800A0A6BF /* MenuButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuButton.swift; sourceTree = "<group>"; };
 		074366871DAF0ECF007526D5 /* MainPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
 		074366891DAF1273007526D5 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		0743668B1DAF134F007526D5 /* FooterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FooterView.swift; sourceTree = "<group>"; };
 		0743668D1DAF22D4007526D5 /* SliderSymbol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SliderSymbol.swift; sourceTree = "<group>"; };
-		0743668F1DAF26F1007526D5 /* CircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
+		0743668F1DAF26F1007526D5 /* CircleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleButton.swift; sourceTree = "<group>"; };
 		07C3353D1DAC8E18003338DD /* Daana.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Daana.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07C335401DAC8E19003338DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		07C335421DAC8E19003338DD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -82,6 +86,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		070107171DB290A600A0A6BF /* Circle Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				0743668F1DAF26F1007526D5 /* CircleButton.swift */,
+				070107181DB290F100A0A6BF /* DonateButton.swift */,
+				0701071A1DB2938800A0A6BF /* MenuButton.swift */,
+			);
+			name = "Circle Buttons";
+			sourceTree = "<group>";
+		};
 		074366861DAF0E73007526D5 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -116,10 +130,10 @@
 		07C3353F1DAC8E18003338DD /* Daana */ = {
 			isa = PBXGroup;
 			children = (
+				070107171DB290A600A0A6BF /* Circle Buttons */,
 				074366861DAF0E73007526D5 /* Supporting Files */,
 				07C335471DAC8E19003338DD /* Assets.xcassets */,
 				074366891DAF1273007526D5 /* Main.storyboard */,
-				0743668F1DAF26F1007526D5 /* CircleView.swift */,
 				0743668D1DAF22D4007526D5 /* SliderSymbol.swift */,
 				0743668B1DAF134F007526D5 /* FooterView.swift */,
 				074366871DAF0ECF007526D5 /* MainPageViewController.swift */,
@@ -282,9 +296,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				074366901DAF26F1007526D5 /* CircleView.swift in Sources */,
+				074366901DAF26F1007526D5 /* CircleButton.swift in Sources */,
 				0743668E1DAF22D4007526D5 /* SliderSymbol.swift in Sources */,
+				070107191DB290F100A0A6BF /* DonateButton.swift in Sources */,
 				07C335431DAC8E19003338DD /* ViewController.swift in Sources */,
+				0701071B1DB2938800A0A6BF /* MenuButton.swift in Sources */,
 				0743668C1DAF134F007526D5 /* FooterView.swift in Sources */,
 				074366881DAF0ECF007526D5 /* MainPageViewController.swift in Sources */,
 				07C335411DAC8E19003338DD /* AppDelegate.swift in Sources */,

@@ -451,20 +451,13 @@
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="qAs-ep-5li"/>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hTe-Lt-CIX" customClass="FooterView" customModule="Daana" customModuleProvider="target">
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Summary" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XCb-TD-wrL">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Donation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XCb-TD-wrL">
                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
                                         <color key="textColor" red="0.29019607843137252" green="0.29019607843137252" blue="0.29019607843137252" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iFM-41-8Sr">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iFM-41-8Sr">
                                         <attributedString key="attributedText">
-                                            <fragment content="Donating ">
-                                                <attributes>
-                                                    <color key="NSColor" red="0.60784313725490191" green="0.60784313725490191" blue="0.60784313725490191" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <font key="NSFont" size="16" name=".SFNSText"/>
-                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                </attributes>
-                                            </fragment>
                                             <fragment content="$5">
                                                 <attributes>
                                                     <color key="NSColor" red="1" green="0.0" blue="0.24705882352941178" alpha="1" colorSpace="calibratedRGB"/>
@@ -510,34 +503,25 @@
                                             <constraint firstAttribute="width" constant="36" id="Lch-Ut-bZx"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yOe-in-sw8" customClass="CircleView" customModule="Daana" customModuleProvider="target">
-                                        <subviews>
-                                            <imageView userInteractionEnabled="NO" tag="2" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Heart Icon" translatesAutoresizingMaskIntoConstraints="NO" id="afO-ma-3H6">
-                                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" secondItem="afO-ma-3H6" secondAttribute="height" multiplier="1:1" id="ngF-mF-dvr"/>
-                                                </constraints>
-                                            </imageView>
-                                        </subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yOe-in-sw8" customClass="DonateButton" customModule="Daana" customModuleProvider="target">
                                         <color key="backgroundColor" red="1" green="0.1764705882352941" blue="0.33333333333333331" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="95" id="2jo-9a-HJS"/>
                                             <constraint firstAttribute="width" secondItem="yOe-in-sw8" secondAttribute="height" multiplier="1:1" id="6Yf-YL-qpQ"/>
-                                            <constraint firstItem="afO-ma-3H6" firstAttribute="width" secondItem="yOe-in-sw8" secondAttribute="width" multiplier="0.6" id="Gz2-7K-S3g"/>
-                                            <constraint firstItem="afO-ma-3H6" firstAttribute="centerX" secondItem="yOe-in-sw8" secondAttribute="centerX" id="VIa-XN-eF8"/>
-                                            <constraint firstItem="afO-ma-3H6" firstAttribute="centerY" secondItem="yOe-in-sw8" secondAttribute="centerY" multiplier="1.1" id="tKV-Lu-JrO"/>
                                         </constraints>
+                                        <connections>
+                                            <action selector="didTapDonateButton:" destination="meB-dY-ozW" eventType="touchUpInside" id="23O-CB-xZM"/>
+                                        </connections>
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstItem="iFM-41-8Sr" firstAttribute="bottom" secondItem="yOe-in-sw8" secondAttribute="bottom" id="FCM-J0-E8n"/>
                                     <constraint firstItem="XCb-TD-wrL" firstAttribute="top" secondItem="hTe-Lt-CIX" secondAttribute="top" constant="16" id="MGN-wZ-Vxd"/>
                                     <constraint firstItem="XCb-TD-wrL" firstAttribute="leading" secondItem="hTe-Lt-CIX" secondAttribute="leading" constant="16" id="QcN-4a-7ZU"/>
                                     <constraint firstItem="I41-Bq-rW4" firstAttribute="centerX" secondItem="hTe-Lt-CIX" secondAttribute="centerX" id="YCb-nF-rDR"/>
                                     <constraint firstItem="iFM-41-8Sr" firstAttribute="leading" secondItem="XCb-TD-wrL" secondAttribute="leading" id="i0f-HN-gM1"/>
-                                    <constraint firstItem="yOe-in-sw8" firstAttribute="leading" secondItem="iFM-41-8Sr" secondAttribute="trailing" id="kIA-NG-miC"/>
                                     <constraint firstAttribute="trailing" secondItem="yOe-in-sw8" secondAttribute="trailing" constant="16" id="pHf-0u-t7c"/>
+                                    <constraint firstItem="iFM-41-8Sr" firstAttribute="top" secondItem="XCb-TD-wrL" secondAttribute="bottom" constant="6" id="q1Q-my-VD2"/>
                                     <constraint firstItem="I41-Bq-rW4" firstAttribute="top" secondItem="hTe-Lt-CIX" secondAttribute="top" constant="6" id="sTB-Pr-xqv"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
@@ -546,17 +530,38 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bxz-kN-nw1" customClass="MenuButton" customModule="Daana" customModuleProvider="target">
+                                <color key="backgroundColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="56" id="IKu-Jx-RiF"/>
+                                    <constraint firstAttribute="width" secondItem="Bxz-kN-nw1" secondAttribute="height" multiplier="1:1" id="xzL-sE-myL"/>
+                                </constraints>
+                            </view>
+                            <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9ZF-Yk-h96" userLabel="Range Indicator" customClass="CircleButton" customModule="Daana" customModuleProvider="target">
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="0.10000000000000001" colorSpace="calibratedRGB"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" notEnabled="YES"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="9ZF-Yk-h96" secondAttribute="height" multiplier="1:1" id="QLj-k8-Fz7"/>
+                                    <constraint firstAttribute="width" constant="335" id="fvg-cH-hhM"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <constraints>
+                            <constraint firstItem="9ZF-Yk-h96" firstAttribute="centerY" secondItem="W83-Oc-74i" secondAttribute="centerY" multiplier="0.9" id="5ug-NZ-ngK"/>
                             <constraint firstItem="hTe-Lt-CIX" firstAttribute="height" secondItem="W83-Oc-74i" secondAttribute="height" id="8zT-5G-wxf"/>
                             <constraint firstAttribute="trailing" secondItem="qAs-ep-5li" secondAttribute="trailing" id="B53-7P-SW0"/>
                             <constraint firstItem="qAs-ep-5li" firstAttribute="leading" secondItem="W83-Oc-74i" secondAttribute="leading" id="G5A-qn-cT2"/>
                             <constraint firstAttribute="trailing" secondItem="hTe-Lt-CIX" secondAttribute="trailing" id="GdN-M9-qqh"/>
+                            <constraint firstItem="Bxz-kN-nw1" firstAttribute="leading" secondItem="W83-Oc-74i" secondAttribute="leading" constant="16" id="L4c-o2-j6m"/>
                             <constraint firstItem="hTe-Lt-CIX" firstAttribute="top" secondItem="qAs-ep-5li" secondAttribute="bottom" constant="-85" id="adP-rn-Nf0"/>
                             <constraint firstItem="X0P-hm-WBP" firstAttribute="top" secondItem="yOe-in-sw8" secondAttribute="bottom" constant="17" id="dmq-O5-WhW"/>
                             <constraint firstItem="hTe-Lt-CIX" firstAttribute="leading" secondItem="W83-Oc-74i" secondAttribute="leading" id="fxq-Rx-brW"/>
+                            <constraint firstItem="Bxz-kN-nw1" firstAttribute="top" secondItem="Ba5-fU-cO9" secondAttribute="bottom" constant="20" id="gzx-gU-Jah"/>
+                            <constraint firstItem="9ZF-Yk-h96" firstAttribute="centerX" secondItem="W83-Oc-74i" secondAttribute="centerX" id="lCk-Ae-VzX"/>
+                            <constraint firstItem="X0P-hm-WBP" firstAttribute="top" secondItem="qAs-ep-5li" secondAttribute="bottom" id="r0F-cM-evf"/>
                             <constraint firstItem="qAs-ep-5li" firstAttribute="top" secondItem="W83-Oc-74i" secondAttribute="top" id="u6B-Ud-PQF"/>
-                            <constraint firstItem="qAs-ep-5li" firstAttribute="bottom" secondItem="X0P-hm-WBP" secondAttribute="top" id="uea-S1-0Aj"/>
                         </constraints>
                     </view>
                     <connections>
@@ -573,7 +578,6 @@
         <image name="Details Context@1x" width="375" height="667"/>
         <image name="Donations" width="375" height="667"/>
         <image name="Donations Expanded@1x" width="375" height="667"/>
-        <image name="Heart Icon" width="90" height="80"/>
         <image name="Highlight Location" width="375" height="667"/>
         <image name="Locations List Initial@1x" width="375" height="667"/>
         <image name="Locations List@1x" width="375" height="667"/>
