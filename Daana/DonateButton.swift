@@ -10,6 +10,15 @@ import UIKit
 
 class DonateButton: CircleButton {
     
+    var horizontalAnchor: NSLayoutConstraint? {
+        willSet {
+            horizontalAnchor?.isActive = false
+        }
+        didSet {
+            horizontalAnchor?.isActive = true
+        }
+    }
+    
     var icon: UIImageView!
     var iconColor: UIColor = .white
 

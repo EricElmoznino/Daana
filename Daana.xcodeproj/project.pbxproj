@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		070107191DB290F100A0A6BF /* DonateButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070107181DB290F100A0A6BF /* DonateButton.swift */; };
 		0701071B1DB2938800A0A6BF /* MenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0701071A1DB2938800A0A6BF /* MenuButton.swift */; };
+		0730E0B71DBC569F00788852 /* TextCircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0730E0B61DBC569F00788852 /* TextCircleButton.swift */; };
+		0730E0B91DBC84AE00788852 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0730E0B81DBC84AE00788852 /* ColorExtension.swift */; };
 		074366881DAF0ECF007526D5 /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074366871DAF0ECF007526D5 /* MainPageViewController.swift */; };
 		0743668A1DAF1273007526D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 074366891DAF1273007526D5 /* Main.storyboard */; };
 		0743668C1DAF134F007526D5 /* FooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0743668B1DAF134F007526D5 /* FooterView.swift */; };
@@ -42,6 +44,8 @@
 /* Begin PBXFileReference section */
 		070107181DB290F100A0A6BF /* DonateButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DonateButton.swift; sourceTree = "<group>"; };
 		0701071A1DB2938800A0A6BF /* MenuButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuButton.swift; sourceTree = "<group>"; };
+		0730E0B61DBC569F00788852 /* TextCircleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextCircleButton.swift; sourceTree = "<group>"; };
+		0730E0B81DBC84AE00788852 /* ColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		074366871DAF0ECF007526D5 /* MainPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
 		074366891DAF1273007526D5 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		0743668B1DAF134F007526D5 /* FooterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FooterView.swift; sourceTree = "<group>"; };
@@ -90,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				0743668F1DAF26F1007526D5 /* CircleButton.swift */,
+				0730E0B61DBC569F00788852 /* TextCircleButton.swift */,
 				070107181DB290F100A0A6BF /* DonateButton.swift */,
 				0701071A1DB2938800A0A6BF /* MenuButton.swift */,
 			);
@@ -99,6 +104,7 @@
 		074366861DAF0E73007526D5 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				0730E0B81DBC84AE00788852 /* ColorExtension.swift */,
 				07C335401DAC8E19003338DD /* AppDelegate.swift */,
 				07C335421DAC8E19003338DD /* ViewController.swift */,
 				07C335491DAC8E19003338DD /* LaunchScreen.storyboard */,
@@ -300,10 +306,12 @@
 				0743668E1DAF22D4007526D5 /* SliderSymbol.swift in Sources */,
 				070107191DB290F100A0A6BF /* DonateButton.swift in Sources */,
 				07C335431DAC8E19003338DD /* ViewController.swift in Sources */,
+				0730E0B71DBC569F00788852 /* TextCircleButton.swift in Sources */,
 				0701071B1DB2938800A0A6BF /* MenuButton.swift in Sources */,
 				0743668C1DAF134F007526D5 /* FooterView.swift in Sources */,
 				074366881DAF0ECF007526D5 /* MainPageViewController.swift in Sources */,
 				07C335411DAC8E19003338DD /* AppDelegate.swift in Sources */,
+				0730E0B91DBC84AE00788852 /* ColorExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

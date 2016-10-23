@@ -448,7 +448,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="qAs-ep-5li"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="qAs-ep-5li">
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="d7Y-gj-yTm" appends="YES" id="2MI-7B-WuM"/>
+                                </connections>
+                            </mapView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hTe-Lt-CIX" customClass="FooterView" customModule="Daana" customModuleProvider="target">
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Donation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XCb-TD-wrL">
@@ -513,25 +518,53 @@
                                             <action selector="didTapDonateButton:" destination="meB-dY-ozW" eventType="touchUpInside" id="23O-CB-xZM"/>
                                         </connections>
                                     </view>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Arrow Icon" translatesAutoresizingMaskIntoConstraints="NO" id="QyE-zC-lQK">
+                                        <color key="tintColor" red="0.60784313725490191" green="0.60784313725490191" blue="0.60784313725490191" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="16" id="Jjm-Ry-OZJ"/>
+                                            <constraint firstAttribute="width" constant="16" id="T2m-ms-Nli"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UWU-Tl-DrU">
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="123" id="Ifq-1r-OiF"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                        <state key="normal" title="see locations">
+                                            <color key="titleColor" red="0.60784313725490191" green="0.60784313725490191" blue="0.60784313725490191" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="didTapListButton:" destination="meB-dY-ozW" eventType="touchUpInside" id="dsH-ho-0bp"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
                                 <constraints>
+                                    <constraint firstItem="yOe-in-sw8" firstAttribute="top" secondItem="hTe-Lt-CIX" secondAttribute="top" constant="-27" id="IiZ-q2-kxN"/>
                                     <constraint firstItem="XCb-TD-wrL" firstAttribute="top" secondItem="hTe-Lt-CIX" secondAttribute="top" constant="16" id="MGN-wZ-Vxd"/>
                                     <constraint firstItem="XCb-TD-wrL" firstAttribute="leading" secondItem="hTe-Lt-CIX" secondAttribute="leading" constant="16" id="QcN-4a-7ZU"/>
+                                    <constraint firstAttribute="trailing" secondItem="QyE-zC-lQK" secondAttribute="trailing" constant="16" id="S1o-Xq-5wY"/>
                                     <constraint firstItem="I41-Bq-rW4" firstAttribute="centerX" secondItem="hTe-Lt-CIX" secondAttribute="centerX" id="YCb-nF-rDR"/>
+                                    <constraint firstItem="UWU-Tl-DrU" firstAttribute="baseline" secondItem="QyE-zC-lQK" secondAttribute="baseline" id="ZCl-If-saw"/>
                                     <constraint firstItem="iFM-41-8Sr" firstAttribute="leading" secondItem="XCb-TD-wrL" secondAttribute="leading" id="i0f-HN-gM1"/>
-                                    <constraint firstAttribute="trailing" secondItem="yOe-in-sw8" secondAttribute="trailing" constant="16" id="pHf-0u-t7c"/>
+                                    <constraint firstItem="UWU-Tl-DrU" firstAttribute="trailing" secondItem="QyE-zC-lQK" secondAttribute="trailing" id="jgI-DG-7X6"/>
+                                    <constraint firstAttribute="trailing" secondItem="yOe-in-sw8" secondAttribute="trailing" constant="16" placeholder="YES" id="pHf-0u-t7c"/>
                                     <constraint firstItem="iFM-41-8Sr" firstAttribute="top" secondItem="XCb-TD-wrL" secondAttribute="bottom" constant="6" id="q1Q-my-VD2"/>
                                     <constraint firstItem="I41-Bq-rW4" firstAttribute="top" secondItem="hTe-Lt-CIX" secondAttribute="top" constant="6" id="sTB-Pr-xqv"/>
+                                    <constraint firstItem="UWU-Tl-DrU" firstAttribute="baseline" secondItem="XCb-TD-wrL" secondAttribute="baseline" id="w0M-tU-ycC"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                         <real key="value" value="10"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="tX8-iI-TXZ" appends="YES" id="ZhG-wu-8H5"/>
+                                </connections>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bxz-kN-nw1" customClass="MenuButton" customModule="Daana" customModuleProvider="target">
-                                <color key="backgroundColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="1" green="0.28426170349121094" blue="0.40588945150375366" alpha="1" colorSpace="deviceRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="56" id="IKu-Jx-RiF"/>
                                     <constraint firstAttribute="width" secondItem="Bxz-kN-nw1" secondAttribute="height" multiplier="1:1" id="xzL-sE-myL"/>
@@ -549,14 +582,13 @@
                             </view>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="9ZF-Yk-h96" firstAttribute="centerY" secondItem="W83-Oc-74i" secondAttribute="centerY" multiplier="0.9" id="5ug-NZ-ngK"/>
+                            <constraint firstItem="9ZF-Yk-h96" firstAttribute="centerY" secondItem="W83-Oc-74i" secondAttribute="centerY" multiplier="0.9" constant="15" id="5ug-NZ-ngK"/>
                             <constraint firstItem="hTe-Lt-CIX" firstAttribute="height" secondItem="W83-Oc-74i" secondAttribute="height" id="8zT-5G-wxf"/>
                             <constraint firstAttribute="trailing" secondItem="qAs-ep-5li" secondAttribute="trailing" id="B53-7P-SW0"/>
                             <constraint firstItem="qAs-ep-5li" firstAttribute="leading" secondItem="W83-Oc-74i" secondAttribute="leading" id="G5A-qn-cT2"/>
                             <constraint firstAttribute="trailing" secondItem="hTe-Lt-CIX" secondAttribute="trailing" id="GdN-M9-qqh"/>
                             <constraint firstItem="Bxz-kN-nw1" firstAttribute="leading" secondItem="W83-Oc-74i" secondAttribute="leading" constant="16" id="L4c-o2-j6m"/>
                             <constraint firstItem="hTe-Lt-CIX" firstAttribute="top" secondItem="qAs-ep-5li" secondAttribute="bottom" constant="-85" id="adP-rn-Nf0"/>
-                            <constraint firstItem="X0P-hm-WBP" firstAttribute="top" secondItem="yOe-in-sw8" secondAttribute="bottom" constant="17" id="dmq-O5-WhW"/>
                             <constraint firstItem="hTe-Lt-CIX" firstAttribute="leading" secondItem="W83-Oc-74i" secondAttribute="leading" id="fxq-Rx-brW"/>
                             <constraint firstItem="Bxz-kN-nw1" firstAttribute="top" secondItem="Ba5-fU-cO9" secondAttribute="bottom" constant="20" id="gzx-gU-Jah"/>
                             <constraint firstItem="9ZF-Yk-h96" firstAttribute="centerX" secondItem="W83-Oc-74i" secondAttribute="centerX" id="lCk-Ae-VzX"/>
@@ -565,15 +597,33 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="donateButton" destination="yOe-in-sw8" id="rci-Dc-opO"/>
+                        <outlet property="donateTopDistance" destination="IiZ-q2-kxN" id="cqM-fv-bg4"/>
+                        <outlet property="donationInfo" destination="iFM-41-8Sr" id="VOf-t4-UcX"/>
+                        <outlet property="footerView" destination="hTe-Lt-CIX" id="vGc-yn-wg6"/>
+                        <outlet property="footerViewDistance" destination="adP-rn-Nf0" id="09n-yU-fRX"/>
+                        <outlet property="listButton" destination="UWU-Tl-DrU" id="xrl-rL-LbK"/>
                         <outlet property="mapView" destination="qAs-ep-5li" id="8dy-YT-uef"/>
+                        <outlet property="showListArrow" destination="QyE-zC-lQK" id="2Ds-O2-bfh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O34-VZ-hca" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="tX8-iI-TXZ">
+                    <connections>
+                        <action selector="didTapFooterView:" destination="meB-dY-ozW" id="ewa-dy-gKr"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="d7Y-gj-yTm">
+                    <connections>
+                        <action selector="didTapOutsideFooterView:" destination="meB-dY-ozW" id="BbC-hr-5nU"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="24.800000000000001" y="2342.8785607196405"/>
         </scene>
     </scenes>
     <resources>
+        <image name="Arrow Icon" width="40" height="40"/>
         <image name="Details" width="375" height="667"/>
         <image name="Details Context@1x" width="375" height="667"/>
         <image name="Donations" width="375" height="667"/>
