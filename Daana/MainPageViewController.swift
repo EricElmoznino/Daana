@@ -9,7 +9,7 @@
 import UIKit
 import MapKit
 
-class MainPageViewController: UIViewController {
+class MainPageViewController: UIViewController, LocationHandlerDelegate {
     
     // MARK: Initialization
     
@@ -41,6 +41,13 @@ class MainPageViewController: UIViewController {
         amountButton.addTarget(self, action: #selector(didTapAmountButton(_:)), for: .touchUpInside)
         radiusButton = TextCircleButton(radius: 35, red: true, text: "2km")
         radiusButton.addTarget(self, action: #selector(didTapRadiusButton(_:)), for: .touchUpInside)
+        
+        locationHandler.delegate = self
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        mapView.showsUserLocation = true
+        mapView.userTrackingMode = .follow
     }
 
     // MARK: Actions
@@ -153,5 +160,24 @@ class MainPageViewController: UIViewController {
         view.layoutIfNeeded()
         amountButton.horizontalAnchor = amountButton.rightAnchor.constraint(equalTo: self.donateButton.leftAnchor, constant: -28)
         radiusButton.horizontalAnchor = radiusButton.leftAnchor.constraint(equalTo: self.donateButton.rightAnchor, constant: 28)
+    }
+    
+    // MARK: Charities in range
+    // TODO: Keep the map centered on the user location unless they drag. Have a button to relock onto the user location if they have dragged away.
+    // TODO: Create the map annotations
+    // TODO: When the user wants to show the list of charities, initialize the list page with the charities whose ids are in one of the annotations id's. As an alternative, maybe initialize the page with the charities in the desired location/range. It's a question of which function to use from the charities repository.
+    var charitiesRepository = CharitiesRepository()
+    var locationHandler = LocationHandler()
+    var trackingUser = true
+    var range = 5
+    var displayedCharities: [Charity] = []  // TODO: Change to be just an array of the map annotations for the charity, where every annotation will just have the id, and be initialized with the charity objects fetched from the repository. Will use a translator class to do this instead of doing the translation in the view controller. We will only do this update if the charities have changed.
+    
+    func locationDidUpdate() {
+        if trackingUser {
+            displayedCharities = charitiesRepository.getCharities(
+                inRange: range,
+                fromLocation: mapView.userLocation.location)
+            print(displayedCharities)
+        }
     }
 }

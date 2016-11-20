@@ -11,6 +11,9 @@
 		0701071B1DB2938800A0A6BF /* MenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0701071A1DB2938800A0A6BF /* MenuButton.swift */; };
 		0730E0B71DBC569F00788852 /* TextCircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0730E0B61DBC569F00788852 /* TextCircleButton.swift */; };
 		0730E0B91DBC84AE00788852 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0730E0B81DBC84AE00788852 /* ColorExtension.swift */; };
+		074322A91DD904520030A2EE /* Charity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074322A81DD904520030A2EE /* Charity.swift */; };
+		074322AC1DD9093B0030A2EE /* CharitiesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074322AB1DD9093B0030A2EE /* CharitiesRepository.swift */; };
+		074322AF1DD9211F0030A2EE /* LocationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074322AE1DD9211F0030A2EE /* LocationHandler.swift */; };
 		074366881DAF0ECF007526D5 /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074366871DAF0ECF007526D5 /* MainPageViewController.swift */; };
 		0743668A1DAF1273007526D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 074366891DAF1273007526D5 /* Main.storyboard */; };
 		0743668C1DAF134F007526D5 /* FooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0743668B1DAF134F007526D5 /* FooterView.swift */; };
@@ -46,6 +49,9 @@
 		0701071A1DB2938800A0A6BF /* MenuButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuButton.swift; sourceTree = "<group>"; };
 		0730E0B61DBC569F00788852 /* TextCircleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextCircleButton.swift; sourceTree = "<group>"; };
 		0730E0B81DBC84AE00788852 /* ColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		074322A81DD904520030A2EE /* Charity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Charity.swift; sourceTree = "<group>"; };
+		074322AB1DD9093B0030A2EE /* CharitiesRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharitiesRepository.swift; sourceTree = "<group>"; };
+		074322AE1DD9211F0030A2EE /* LocationHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationHandler.swift; sourceTree = "<group>"; };
 		074366871DAF0ECF007526D5 /* MainPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
 		074366891DAF1273007526D5 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		0743668B1DAF134F007526D5 /* FooterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FooterView.swift; sourceTree = "<group>"; };
@@ -101,6 +107,30 @@
 			name = "Circle Buttons";
 			sourceTree = "<group>";
 		};
+		074322A71DD903F70030A2EE /* Domain Models */ = {
+			isa = PBXGroup;
+			children = (
+				074322A81DD904520030A2EE /* Charity.swift */,
+			);
+			name = "Domain Models";
+			sourceTree = "<group>";
+		};
+		074322AA1DD908890030A2EE /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				074322AB1DD9093B0030A2EE /* CharitiesRepository.swift */,
+			);
+			name = Repositories;
+			sourceTree = "<group>";
+		};
+		074322AD1DD919D80030A2EE /* Convenience */ = {
+			isa = PBXGroup;
+			children = (
+				074322AE1DD9211F0030A2EE /* LocationHandler.swift */,
+			);
+			name = Convenience;
+			sourceTree = "<group>";
+		};
 		074366861DAF0E73007526D5 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -136,6 +166,9 @@
 		07C3353F1DAC8E18003338DD /* Daana */ = {
 			isa = PBXGroup;
 			children = (
+				074322AD1DD919D80030A2EE /* Convenience */,
+				074322AA1DD908890030A2EE /* Repositories */,
+				074322A71DD903F70030A2EE /* Domain Models */,
 				070107171DB290A600A0A6BF /* Circle Buttons */,
 				074366861DAF0E73007526D5 /* Supporting Files */,
 				07C335471DAC8E19003338DD /* Assets.xcassets */,
@@ -302,11 +335,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				074322AC1DD9093B0030A2EE /* CharitiesRepository.swift in Sources */,
 				074366901DAF26F1007526D5 /* CircleButton.swift in Sources */,
+				074322A91DD904520030A2EE /* Charity.swift in Sources */,
 				0743668E1DAF22D4007526D5 /* SliderSymbol.swift in Sources */,
 				070107191DB290F100A0A6BF /* DonateButton.swift in Sources */,
 				07C335431DAC8E19003338DD /* ViewController.swift in Sources */,
 				0730E0B71DBC569F00788852 /* TextCircleButton.swift in Sources */,
+				074322AF1DD9211F0030A2EE /* LocationHandler.swift in Sources */,
 				0701071B1DB2938800A0A6BF /* MenuButton.swift in Sources */,
 				0743668C1DAF134F007526D5 /* FooterView.swift in Sources */,
 				074366881DAF0ECF007526D5 /* MainPageViewController.swift in Sources */,
